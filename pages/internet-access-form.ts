@@ -16,6 +16,11 @@ collapseTab = () => this.page.locator('[id=collapseOne]');
 selectDesignation = () => this.page.locator('[name="ddEmpDesignation"]');
 selectLocation =() => this.page.locator('[name="ddEmpLocation"]');
 selectRequestSubmissionTypes = () => this.page.locator('[id="drpRequestSubmissionFor"]');
+collapseTransactinFieldsTab =() => this.page.locator('(//button[normalize-space()="Transaction Fields"])[1]');
+selectRequestType =() => this.page.locator("(//span[@class='checkmark'])[7]");
+businessFields =() => this.page.locator('#txtBusinessNeed');
+clickSubmitButton =() => this.page.locator('[id ="btnSubmit"]');
+
 
 
 
@@ -27,7 +32,10 @@ async clickSearchBox(){
     await this.selectDesignation().selectOption('Managing Director');
     await this.selectLocation().selectOption('SAVW - Pune Chakan Plant');
     await this.selectRequestSubmissionTypes().selectOption('Self');
-    await console.log("test pass");
+    await this.collapseTransactinFieldsTab().click();
+    await this.selectRequestType().click();
+    await this.businessFields().fill("Please provid all the details for this project");
+    await this.clickSubmitButton().click();
 
 }
 }
