@@ -24,7 +24,7 @@ clickSubmitButton =() => this.page.locator('[id ="btnSubmit"]');
 
 
 
-async clickSearchBox(){
+async verifyInternetAccessForm(){
     await this.selectDepartment().selectOption('IT');
     await this.selectFormName().selectOption('IA');
     await this.searchButton().click();

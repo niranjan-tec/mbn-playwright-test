@@ -12,7 +12,7 @@ test ('Internet Access Form', async ({page})=>{
   
     await loginUrl.eFormLoginUrl();
     await commonActions.loginDetails();
-    await internetAccessForm.clickSearchBox();
+    await internetAccessForm.verifyInternetAccessForm();
   
     });
   
