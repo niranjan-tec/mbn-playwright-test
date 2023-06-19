@@ -27,6 +27,7 @@ async clickSearchBox(){
     await this.selectDesignation().selectOption('Managing Director');
     await this.selectLocation().selectOption('SAVW - Pune Chakan Plant');
     await this.selectRequestSubmissionTypes().selectOption('Self');
-}
+    await console.log("test pass");
 
+}
 }
