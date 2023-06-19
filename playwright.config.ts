@@ -28,7 +28,7 @@ export default defineConfig({
     ['line'],
     ['html', {open: 'never', outputFolder: 'playwright-reports/html'}],
     ['junit', {outputFile: 'test-results/junit/junit-result.xml'}],
-    ["allure-playwright"],
+    //["allure-playwright"],
     
   ],
   
