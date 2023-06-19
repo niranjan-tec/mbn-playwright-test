@@ -15,7 +15,7 @@ jobs:
         node-version: 16
     - name: Make HTTP Request
       run: |
-          curl -X GET http://example.com/endpoint
+          curl -X GET http://win-6cgsdmg51od:8500/Login/Index
     - name: Install dependencies
       run: npm ci
     - name: Install Playwright Browsers
