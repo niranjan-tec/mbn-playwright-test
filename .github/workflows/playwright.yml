@@ -2,10 +2,6 @@ name: Playwright Tests
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        type: choice
-        description: 'Test environment'
-        required: true
       browser:
         type: choice
         description: 'Browser'
