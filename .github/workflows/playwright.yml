@@ -1,5 +1,21 @@
 name: Playwright Tests
 on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: choice
+        description: 'Test environment'
+        required: true
+      browser:
+        type: choice
+        description: 'Browser'
+        required: true
+        default: chrome
+        options:
+          - chrome
+          - firefox
+          - safari
+          - edge
   push:
     branches: [ main, master ]
   pull_request:
