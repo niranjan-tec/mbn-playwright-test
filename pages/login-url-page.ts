@@ -10,8 +10,7 @@ export class LoginUrlPage{
     }
 
     async eFormLoginUrl(){
-        //await this.page.goto("http://win-6cgsdmg51od:8500/");
-        await this.page.goto("http://win-6cgsdmg51od:50000/sites/MPR/SitePages/MyDashboard.aspx/");
+        await this.page.goto("http://win-6cgsdmg51od:8500/");
     }
     
 }
