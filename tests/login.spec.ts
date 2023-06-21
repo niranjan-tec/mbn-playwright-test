@@ -1,14 +1,5 @@
-import { test, expect } from '@playwright/test';
-import { CommonActionMethodPage } from '../pages/common-action-locators';
-import { LoginUrlPage } from '../pages/login-url-page';
-
-test ('E-form loging', async ({page})=>{
-
-  const commonActions = new CommonActionMethodPage(page);
-  const loginUrl = new LoginUrlPage(page);
-
-  await loginUrl.eFormLoginUrl();
-  await commonActions.loginDetails();
-
-  });
-
+const n=20;
+let i=0;
+for(i=0; i<=n; i++){
+console.log(i);
+}
