@@ -34,7 +34,7 @@ async verifyInternetAccessForm(){
     await this.selectRequestSubmissionTypes().selectOption('Self');
     await this.collapseTransactinFieldsTab().click();
     await this.selectRequestType().click();
-    await this.businessFields().fill("Please provid all the details for this project");
+    await this.businessFields().fill("Please provide all the details for this project");
     await this.clickSubmitButton().click();
 
 }
